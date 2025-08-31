@@ -27,20 +27,21 @@ Use the setup commands below to get started:
 conda create -n tracevla python=3.10 -y
 conda activate tracevla
 
+# Clone the cmower/tracevla repo
+git clone --recursive https://github.com/cmower/tracevla.git
+cd tracevla
+
 # Install depdencies of Co-Tracker:
-git clone https://github.com/facebookresearch/co-tracker.git
-cd co-tracker
+cd extern/co-tracker
 pip install -e .
 
 # Download Co-Tracker checkpoint
 mkdir -p checkpoints
 cd checkpoints
 wget https://huggingface.co/facebook/cotracker3/resolve/main/scaled_offline.pth
-cd ..
+cd ../../..
 
-# Clone and install the tracevla repo
-git clone https://github.com/openvla/tracevla.git
-cd tracevla
+# Install the cmower/tracevla repo
 pip install -e .
 # Install Flash Attention 2 for training 
 pip install "flash-attn==2.5.5" --no-build-isolation
