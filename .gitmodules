@@ -1,3 +1,6 @@
 [submodule "extern/co-tracker"]
 	path = extern/co-tracker
 	url = https://github.com/facebookresearch/co-tracker.git
+[submodule "extern/SimplerEnv"]
+	path = extern/SimplerEnv
+	url = https://github.com/simpler-env/SimplerEnv
