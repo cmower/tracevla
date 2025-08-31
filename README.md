@@ -45,6 +45,14 @@ cd ../../..
 pip install -e .
 # Install Flash Attention 2 for training 
 pip install "flash-attn==2.5.5" --no-build-isolation
+
+# Install SimplerEnv
+pip install numpy==1.24.4
+pip install -e extern/SimplerEnv/ManiSkill2_real2sim/
+pip install -e extern/SimplerEnv/
+
+# Other deps
+pip install -U "transformers>=4.41"
 ```
 If you run into any problems during the installation process, please file a GitHub Issue.
 
